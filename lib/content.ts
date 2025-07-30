@@ -13,13 +13,13 @@ export const content = {
   },
   heroSection: {
     name: 'RISHI RAJ',
-    bio: "I craft elegant, user-focused web experiences—melding intuitive UI with scalable backend architecture. From pixel-perfect React interfaces to resilient Express APIs and thoughtfully modeled databases, I translate complex requirements into seamless digital products that delight users and withstand real-world traffic.",
+    bio: "I mostly make full stack stuff. I also love learning new technologies as they come out, just to try my best to stay ahead of the curve. If you fear the change, you will be left behind.",
     cvUrl: '/Resume.pdf',
     avatar: '/pfp.webp',
   },
   projectsSection: {
     title: 'My Projects',
-    subtitle: 'Every project is a unique endeavor. See what I have accomplished so far!',
+    subtitle: 'Every project is a unique experience. Check out some stuff I have worked on so far',
     projects: [
       {
         name: 'Bable',
@@ -130,6 +130,6 @@ export const content = {
     phone: '+91-9911449830'
   },
   footer: {
-    text: '© 2024 Rishi Raj. All rights reserved.',
+    text: '© 2025 Rishi Raj. All rights reserved.',
   },
 };
