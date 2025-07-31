@@ -7,6 +7,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Rishi Raj",
   description: "Portfolio Website",
+  icons: {
+    icon: "/logo.webp",
+  },
 };
 
 export default function RootLayout({
