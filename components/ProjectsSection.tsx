@@ -5,8 +5,8 @@ import { content } from '@/lib/content';
 const ProjectsSection: React.FC = () => {
   return (
     <section id="projects" className="py-20">
-      <div className="container mx-auto text-center max-w-7xl">
-        <h2 className="text-4xl font-bold text-foreground">{content.projectsSection.title}</h2>
+      <div className="container mx-auto text-center max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl font-bold text-foreground">{content.projectsSection.title}</h2>
         <p className="text-lg text-muted-foreground mt-4">
           {content.projectsSection.subtitle}
         </p>

@@ -22,9 +22,9 @@ const HeroSection: React.FC = () => {
   return (
     <section className="bg-transparent relative">
       <div className="absolute inset-0 bg-transparent"></div>
-      <div className="container mx-auto flex flex-col md:flex-row items-center py-20 md:py-32 max-w-7xl pl-20">
-        <div className="md:w-1/2 text-left">
-          <h1 className="text-6xl font-bold text-foreground">{content.heroSection.name}</h1>
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left py-20 md:py-32 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="md:w-1/2 flex flex-col items-center md:items-start">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground">{content.heroSection.name}</h1>
           <p className="text-lg text-muted-foreground mt-4 max-w-xl">
             {content.heroSection.bio}
           </p>
@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
             </Button>
           </div>
         </div>
-        <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
+        <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
           <div
             className="relative"
             onMouseEnter={() => setIsHovered(true)}

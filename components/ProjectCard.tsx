@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="p-6 flex justify-center items-center space-x-3">
+      <div className="p-4 sm:p-6 flex justify-center items-center space-x-3">
         <Image
           src={project.logoUrl}
           alt={`${project.name} logo`}
@@ -28,12 +28,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           width={34}
           height={34}
         />
-        <h3 className="text-2xl font-bold font-mono text-foreground">
+        <h3 className="text-xl sm:text-2xl font-bold font-mono text-foreground">
           {project.name}
         </h3>
       </div>
-      <div className="px-6 pb-4">
-        <p className="text-md text-muted-foreground font-sans">
+      <div className="px-4 sm:px-6 pb-4">
+        <p className="text-sm sm:text-md text-muted-foreground font-sans">
           {project.oneLiner}
         </p>
       </div>
@@ -48,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <Image
           src={project.mobileImageUrl}
           alt={`${project.name} mobile view`}
-          className="absolute bottom-0 right-20 w-1/3"
+          className="absolute bottom-0 right-4 sm:right-8 md:right-12 lg:right-20 w-1/4 sm:w-1/3"
           width={200}
           height={400}
         />
