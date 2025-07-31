@@ -90,11 +90,11 @@ export const content = {
         date: '2025 June - Present',
         title: 'Technical Product Intern',
         company: 'Times of India',
-        description: 'In charge of designing end to end Proof of Concepts, including full stack apps.',
+        description: 'In charge of designing end-to-end Proof of Concepts, including all stack apps.',
         iconUrl: '/toi.webp',
         responsibilities: [
           'Designing and creating functional POCS',
-          'Collaborated with cross-functional teams to streamline new features and TOF improvements',
+          'Collaborating with cross-functional teams to streamline new features and TOF improvements',
           'Creating Games for TOI app',
         ],
       },
