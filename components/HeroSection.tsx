@@ -37,7 +37,7 @@ const HeroSection: React.FC = () => {
             </Button>
           </div>
         </div>
-        <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
+        <div className="md:w-1/2 flex justify-end mt-10 md:mt-0">
           <div
             className="relative"
             onMouseEnter={() => setIsHovered(true)}
