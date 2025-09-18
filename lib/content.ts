@@ -8,7 +8,7 @@ export const content = {
     ],
     socialLinks: {
       github: 'https://github.com/rishi0810',
-      linkedin: 'www.linkedin.com/in/rishiraj2003',
+      linkedin: 'https://linkedin.com/in/rishiraj2003',
     },
   },
   heroSection: {
@@ -48,7 +48,7 @@ export const content = {
         mobileImageUrl: '/screenshots/mclmtest.webp',
         oneLiner: 'Music app based on JioSaavn backend',
         githubUrl: 'https://github.com/rishi0810/Musicality',
-        liveUrl: 'https://musicalitywmp.vercel.app/',
+        liveUrl: 'https://musicalty-mapp.vercel.app/',
         techStack: ['React', 'Tailwind', 'HTML'],
       },
       {
