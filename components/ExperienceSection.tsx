@@ -1,4 +1,3 @@
-"use client";
 import React from 'react';
 import ExperienceTimeline from './ExperienceTimeline';
 import { content } from '@/lib/content';

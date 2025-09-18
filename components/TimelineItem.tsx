@@ -1,7 +1,5 @@
-"use client";
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
-import { useTheme } from 'next-themes';
 
 export interface Experience {
   id: number;
@@ -19,24 +17,16 @@ interface TimelineItemProps {
 }
 
 const TimelineItem: React.FC<TimelineItemProps> = ({ experience }) => {
-  const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
-  const iconSrc = resolvedTheme === 'dark' && experience.iconUrlDark ? experience.iconUrlDark : experience.iconUrl;
+  const darkSrc = experience.iconUrlDark || experience.iconUrl;
 
   return (
     <div className="group relative flex gap-x-5">
       <div className="relative">
         <div className="relative flex h-8 w-8 items-center justify-center rounded-md bg-card text-card-foreground ring-8 ring-background overflow-hidden">
-          <Image src={iconSrc} alt={experience.title} width={30} height={30} className="object-cover" />
+          <picture>
+            <source srcSet={darkSrc} media="(prefers-color-scheme: dark)" />
+            <Image src={experience.iconUrl} alt={experience.title} width={30} height={30} className="object-cover" />
+          </picture>
         </div>
         <div className="absolute -bottom-8 left-4 top-8 w-px bg-border group-last:hidden" />
       </div>

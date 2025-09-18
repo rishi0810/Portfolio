@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           src={project.desktopImageUrl}
           alt={`${project.name} desktop view`}
           className="w-full"
-          width={800}
+          width={900}
           height={600}
         />
         <Image
@@ -64,7 +64,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             {project.techStack.map((tech) => {
               const skill = content.skillsSection.skills.find(s => s.name === tech);
               if (skill) {
-                return <img key={skill.name} src={skill.imageUrl} alt={skill.name} className="h-6" />;
+                return (
+                  <Image
+                    key={skill.name}
+                    src={skill.imageUrl}
+                    alt={skill.name}
+                    className="h-6"
+                    width={96}
+                    height={24}
+                  />
+                );
               }
               return null;
             })}

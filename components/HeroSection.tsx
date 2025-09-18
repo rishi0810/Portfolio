@@ -21,19 +21,38 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="bg-transparent relative">
-      <div className="absolute inset-0 bg-transparent"></div>
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left py-20 md:py-32 max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div className="absolute inset-0 bg-transparent pointer-events-none"></div>
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left py-20 md:py-32 max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="md:w-1/2 flex flex-col items-center md:items-start">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground">{content.heroSection.name}</h1>
           <p className="text-lg text-muted-foreground mt-4 max-w-xl">
             {content.heroSection.bio}
           </p>
           <div className="mt-8">
-            <Button variant="ghost" asChild>
-              <a href="/Resume.pdf" download="Resume.pdf" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <FaDownload className="mr-2" />
-                Download CV
-              </a>
+            <Button
+              variant="ghost"
+              onClick={async () => {
+                try {
+                  console.log("Clicked download button");
+                  const res = await fetch('/Resume.pdf');
+                  if (!res.ok) throw new Error('Network response was not ok');
+                  const blob = await res.blob();
+                  const url = URL.createObjectURL(blob);
+                  const a = document.createElement('a');
+                  a.href = url;
+                  a.download = 'Resume.pdf';
+                  document.body.appendChild(a);
+                  a.click();
+                  a.remove();
+                  URL.revokeObjectURL(url);
+                } catch (err) {
+                  console.warn('Download failed, opening in new tab instead.', err);
+                  window.open('/Resume.pdf', '_blank', 'noopener');
+                }
+              }}
+            >
+              <FaDownload className="mr-2" />
+              Download CV
             </Button>
           </div>
         </div>
