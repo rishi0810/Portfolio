@@ -22,15 +22,15 @@ const HeroSection: React.FC = () => {
   return (
     <section className="bg-transparent relative">
   <div className="absolute inset-0 bg-transparent pointer-events-none"></div>
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left py-20 md:py-32 max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left py-20 md:py-32 max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="md:w-1/2 flex flex-col items-center md:items-start">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground">{content.heroSection.name}</h1>
           <p className="text-lg text-muted-foreground mt-4 max-w-xl">
             {content.heroSection.bio}
           </p>
           <div className="mt-8">
-            <Button
-              variant="ghost"
+            <button
+              className="relative min-w-[130px] h-10 px-4 py-2 font-bold cursor-pointer rounded-xs z-0 overflow-hidden border-[0.5px] border-foreground bg-background text-foreground transition-colors duration-300 ease-in-out hover:text-background group inline-flex items-center justify-center"
               onClick={async () => {
                 try {
                   console.log("Clicked download button");
@@ -51,9 +51,10 @@ const HeroSection: React.FC = () => {
                 }
               }}
             >
-              <FaDownload className="mr-2" />
-              Download CV
-            </Button>
+              <span className="absolute left-0 top-0 h-full w-full bg-foreground transition-all duration-300 ease-in-out -translate-x-full group-hover:translate-x-0 -z-10"></span>
+              <FaDownload className="mr-2 relative z-10" />
+              <span className="relative z-10">Download CV</span>
+            </button>
           </div>
         </div>
         <div className="md:w-1/2 flex justify-end mt-10 md:mt-0">
