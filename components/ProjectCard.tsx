@@ -48,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <Image
           src={project.mobileImageUrl}
           alt={`${project.name} mobile view`}
-          className="absolute bottom-0 right-4 sm:right-8 md:right-12 lg:right-20 w-1/4 sm:w-1/3"
+          className="absolute bottom-4 right-4 sm:right-8 md:right-12 lg:right-20 w-20 sm:w-20 md:w-28 lg:w-32 h-auto drop-shadow-lg rounded-lg"
           width={200}
           height={400}
         />

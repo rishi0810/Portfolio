@@ -44,8 +44,8 @@ export const content = {
       {
         name: 'Musicality',
         logoUrl: '/screenshots/mcli.webp',
-        desktopImageUrl: '/screenshots/test.png',
-        mobileImageUrl: '/screenshots/mclmtest.webp',
+        desktopImageUrl: '/screenshots/mcld.webp',
+        mobileImageUrl: '/screenshots/mclm.webp',
         oneLiner: 'Music app based on JioSaavn backend',
         githubUrl: 'https://github.com/rishi0810/Musicality',
         liveUrl: 'https://musicalty-mapp.vercel.app/',
