@@ -75,11 +75,8 @@ export const content = {
         { name: 'Node.js', imageUrl: 'https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white' },
         { name: 'Express', imageUrl: 'https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white' },
         { name: 'Tailwind', imageUrl: 'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white' },
-        { name: 'MongoDB', imageUrl: 'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white' },
-        { name: 'Springboot', imageUrl: 'https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white' },
-        { name: 'Git', imageUrl: 'https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white' },
-        { name: 'GitHub', imageUrl: 'https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white' },
-        { name: 'Gemini', imageUrl: 'https://img.shields.io/badge/Gemini-181717?style=for-the-badge&logo=gemini&logoColor=white' },
+        { name: 'MongoDB', imageUrl: 'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white' }
+        { name: 'Git', imageUrl: 'https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white' }
     ]
   },
   experienceSection: {
